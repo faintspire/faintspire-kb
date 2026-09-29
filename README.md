@@ -2,21 +2,26 @@
 
 个人**公共**知识库 · 远程：`github.com/faintspire/faintspire-kb`（Public）· 分支 `main`
 
+根目录只保留本 README 与 `.gitignore`，全部内容收纳在 `doc/` 下。
+
 ## 内容结构
 
 | 路径 | 内容 |
 |---|---|
-| `GitHub操作文档.md` | GitHub 全操作手册：建库 / 拉取 / 推送 / IDEA Token / 外观 / Pages / 删除 / 退出 / 大文件清理，配 `images/` 无水印 SVG |
-| `SSH密钥使用文档.md` | SSH 密钥原理与 GitHub、部署服务器双侧配置，含 SSH over 443 实战 |
-| `notes/` | 单篇通用技术笔记（每篇独立文件，登记到本 README 索引） |
-| `public-site/` | SangerBox 对外公共文档站源（Docsify：index.html / README / _sidebar / XXL-JOB 对接文档），可选开 Pages |
-| `images/` | 自绘无水印 SVG 示意图（界面字段依据 github.com / docs.github.com 真实页面） |
+| `doc/GitHub操作文档.md` | GitHub 全操作手册：登录 / 建库 / 拉取 / 推送 / IDEA Token / 外观 / Pages / 删除 / 退出 / 大文件清理 |
+| `doc/SSH密钥使用文档.md` | SSH 密钥原理与 GitHub、部署服务器双侧配置，含 SSH over 443 实战 |
+| `doc/XXL-JOB执行器对接文档.md` | 统一调度中心执行器接入规范（Spring Boot 3.x / JDK 17+），敏感值已脱敏 |
+| `doc/notes/` | 单篇通用技术笔记 |
+| `doc/images/` | 自绘无水印 SVG 示意图（界面字段依据 github.com / docs.github.com 真实页面） |
 
-## 笔记索引
+## 文档索引
 
-| 笔记 | 主题 |
+| 文档 | 主题 |
 |---|---|
-| [notes/git-history-large-file-cleanup.md](notes/git-history-large-file-cleanup.md) | Git 历史大文件清理（GitHub GH001）实战 |
+| [doc/GitHub操作文档.md](doc/GitHub操作文档.md) | GitHub 全流程操作手册（10 章 + 21 条 FAQ） |
+| [doc/SSH密钥使用文档.md](doc/SSH密钥使用文档.md) | SSH 密钥：原理、GitHub / 服务器配置、SSH over 443 |
+| [doc/XXL-JOB执行器对接文档.md](doc/XXL-JOB执行器对接文档.md) | XXL-JOB 执行器接入与存量任务迁移 |
+| [doc/notes/git-history-large-file-cleanup.md](doc/notes/git-history-large-file-cleanup.md) | Git 历史大文件清理（GH001）实战笔记 |
 
 ## 收录原则
 
@@ -35,5 +40,6 @@
 
 ## 发布与在线阅读
 
-- 推送：`git push -u origin main`（SSH over 443，见《SSH密钥使用文档》第 6 章）；
-- 可选 Pages：将 `public-site/` 重命名为 `docs/` 后，在 Settings → Pages 选 `main` + `/docs`，即得 `https://faintspire.github.io/faintspire-kb/` 在线文档站。
+- 推送：在 `faintspire-kb/` 目录内 `git add . && git commit && git push`（SSH over 443）；
+- 在线阅读：GitHub 网页直接浏览 `doc/` 下 Markdown 与 SVG；
+- 可选站点化：日后如需 Docsify 站点，在**根目录**加 `index.html` + `_sidebar.md` 并开 Pages（源选 `main` + `/ (root)`），站点地址 `https://faintspire.github.io/faintspire-kb/`。

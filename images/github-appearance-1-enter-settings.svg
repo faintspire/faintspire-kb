@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" font-family="Segoe UI, Microsoft YaHei, Arial, sans-serif">
+  <rect width="1200" height="620" fill="#ffffff"/>
+  <rect width="1200" height="56" fill="#24292f"/>
+  <circle cx="36" cy="28" r="14" fill="#ffffff"/>
+  <text x="60" y="34" font-size="16" fill="#ffffff">github.com / 任意页面</text>
+  <circle cx="1150" cy="28" r="15" fill="#8c959f"/>
+  <circle cx="1150" cy="28" r="15" fill="none" stroke="#cf222e" stroke-width="3"/>
+  <text x="1080" y="20" font-size="14" fill="#cf222e" font-weight="600">① 点头像</text>
+  <!-- 下拉菜单 -->
+  <rect x="930" y="52" width="250" height="252" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+  <rect x="938" y="60" width="234" height="52" rx="6" fill="#f6f8fa"/>
+  <text x="952" y="82" font-size="14" font-weight="600" fill="#1f2328">Signed in as</text>
+  <text x="952" y="102" font-size="14" fill="#57606a">faintspire</text>
+  <line x1="938" y1="120" x2="1172" y2="120" stroke="#d0d7de"/>
+  <text x="952" y="146" font-size="15" fill="#1f2328">Your profile</text>
+  <text x="952" y="178" font-size="15" fill="#1f2328">Your repositories</text>
+  <text x="952" y="210" font-size="15" fill="#1f2328">Your organizations</text>
+  <text x="952" y="242" font-size="15" fill="#1f2328">Your stars</text>
+  <line x1="938" y1="256" x2="1172" y2="256" stroke="#d0d7de"/>
+  <rect x="938" y="262" width="234" height="34" rx="6" fill="#fff8c5"/>
+  <text x="952" y="285" font-size="15" font-weight="600" fill="#1f2328">Settings ②</text>
+  <!-- 左侧说明 -->
+  <rect x="60" y="120" width="760" height="380" rx="10" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="88" y="168" font-size="20" font-weight="600" fill="#1f2328">两个 Settings，别走错</text>
+  <text x="88" y="212" font-size="15" fill="#1f2328">头像菜单里的 Settings（本图 ②）= 账号设置，URL 为 github.com/settings/…</text>
+  <text x="88" y="244" font-size="15" fill="#57606a">Leave 协作仓库、SSH and GPG keys、Developer settings、Repositories 都在这里</text>
+  <text x="88" y="292" font-size="15" fill="#1f2328">仓库页顶部的 Settings 标签 = 仓库设置，URL 含 /&lt;仓库名&gt;/settings</text>
+  <text x="88" y="324" font-size="15" fill="#57606a">管的是别人访问这个库：Collaborators、Branches、Pages、Danger Zone</text>
+  <rect x="88" y="360" width="700" height="60" rx="6" fill="#fff8c5" stroke="#d4a72c"/>
+  <text x="104" y="396" font-size="15" fill="#57606a">找「退出别人的库」却停在仓库 Settings 里，是本项目踩过的真实坑（FAQ 17）</text>
+  <text x="88" y="466" font-size="14" fill="#57606a">菜单项名称依据 github.com 登录后真实头像菜单绘制</text>
+</svg>

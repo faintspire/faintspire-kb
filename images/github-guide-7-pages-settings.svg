@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" font-family="Segoe UI, Microsoft YaHei, Arial, sans-serif">
+  <rect width="1200" height="700" fill="#ffffff"/>
+  <rect width="1200" height="56" fill="#24292f"/>
+  <circle cx="36" cy="28" r="14" fill="#ffffff"/>
+  <text x="60" y="34" font-size="16" fill="#ffffff">faintspire.github.io · Settings</text>
+  <!-- 侧栏 -->
+  <rect x="0" y="56" width="270" height="644" fill="#f6f8fa"/>
+  <text x="24" y="96" font-size="15" fill="#57606a">General</text>
+  <text x="24" y="132" font-size="13" fill="#8c959f">Code and automation</text>
+  <text x="24" y="162" font-size="15" fill="#57606a">Branches</text>
+  <text x="24" y="194" font-size="15" fill="#57606a">Tags</text>
+  <rect x="8" y="208" width="254" height="34" rx="6" fill="#eaeef2"/>
+  <rect x="8" y="208" width="4" height="34" fill="#fd8c73"/>
+  <text x="24" y="230" font-size="15" font-weight="600" fill="#1f2328">Pages ⑨</text>
+  <text x="24" y="266" font-size="15" fill="#57606a">Actions</text>
+  <text x="24" y="298" font-size="15" fill="#57606a">Webhooks</text>
+  <text x="24" y="330" font-size="15" fill="#57606a">Environments</text>
+  <!-- 主区 -->
+  <text x="310" y="110" font-size="24" font-weight="600" fill="#1f2328">GitHub Pages</text>
+  <rect x="310" y="132" width="850" height="60" rx="8" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="330" y="168" font-size="15" fill="#1a7f37">⑪ Your site is live at https://faintspire.github.io/  （部署完成后显示）</text>
+  <text x="310" y="230" font-size="17" font-weight="600" fill="#1f2328">Build and deployment</text>
+  <text x="310" y="262" font-size="15" fill="#1f2328">Source</text>
+  <rect x="310" y="276" width="300" height="40" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="326" y="302" font-size="15" fill="#1f2328">Deploy from a branch</text>
+  <path d="M586 296 l8 8 l14 -14" stroke="#57606a" stroke-width="2" fill="none"/>
+  <text x="310" y="352" font-size="15" fill="#1f2328">Branch</text>
+  <rect x="310" y="366" width="180" height="40" rx="6" fill="#ffffff" stroke="#0969da" stroke-width="2"/>
+  <text x="326" y="392" font-size="15" fill="#1f2328">main ⑩</text>
+  <rect x="510" y="366" width="180" height="40" rx="6" fill="#ffffff" stroke="#0969da" stroke-width="2"/>
+  <text x="526" y="392" font-size="15" fill="#1f2328">/ (root) ⑩</text>
+  <rect x="710" y="366" width="90" height="40" rx="6" fill="#1f883d"/>
+  <text x="732" y="392" font-size="15" fill="#ffffff">Save</text>
+  <text x="830" y="392" font-size="14" fill="#57606a">静态文件在 docs/ 子目录时改选 /docs</text>
+  <rect x="310" y="440" width="850" height="120" rx="8" fill="#fff8c5" stroke="#d4a72c"/>
+  <text x="330" y="476" font-size="15" fill="#57606a">Source 另一选项 GitHub Actions：用于 MkDocs / Jekyll 等构建型站点；</text>
+  <text x="330" y="504" font-size="15" fill="#57606a">Docsify 属运行时渲染，选 Deploy from a branch 即可，无需构建</text>
+  <text x="330" y="532" font-size="14" fill="#57606a">部署进度在仓库 Actions 标签查看；首次约 1~2 分钟</text>
+  <text x="310" y="620" font-size="14" fill="#57606a">字段依据 docs.github.com「Configuring a publishing source for your GitHub Pages site」绘制</text>
+</svg>

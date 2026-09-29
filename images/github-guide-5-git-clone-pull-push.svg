@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" font-family="Segoe UI, Microsoft YaHei, Arial, sans-serif">
+  <rect width="1200" height="680" fill="#f6f8fa"/>
+  <text x="40" y="52" font-size="24" font-weight="600" fill="#1f2328">本地仓库 ⇄ GitHub 远程：三条命令的关系</text>
+  <!-- 终端 -->
+  <rect x="40" y="90" width="640" height="420" rx="10" fill="#0d1117"/>
+  <circle cx="70" cy="118" r="7" fill="#ff5f56"/>
+  <circle cx="94" cy="118" r="7" fill="#ffbd2e"/>
+  <circle cx="118" cy="118" r="7" fill="#27c93f"/>
+  <text x="70" y="166" font-size="15" fill="#7ee787" font-family="Consolas, monospace">PS C:\project&gt; git clone git@github.com:faintspire/repo.git ④</text>
+  <text x="70" y="200" font-size="15" fill="#8b949e" font-family="Consolas, monospace">Cloning into 'repo'... done.</text>
+  <text x="70" y="244" font-size="15" fill="#7ee787" font-family="Consolas, monospace">PS C:\project\repo&gt; git pull --rebase</text>
+  <text x="70" y="278" font-size="15" fill="#8b949e" font-family="Consolas, monospace">Already up to date.</text>
+  <text x="70" y="322" font-size="15" fill="#7ee787" font-family="Consolas, monospace">PS C:\project\repo&gt; git add .</text>
+  <text x="70" y="356" font-size="15" fill="#7ee787" font-family="Consolas, monospace">PS C:\project\repo&gt; git commit -m "docs: update" ⑤</text>
+  <text x="70" y="390" font-size="15" fill="#8b949e" font-family="Consolas, monospace">[dev 7d5f399] docs: update</text>
+  <text x="70" y="434" font-size="15" fill="#7ee787" font-family="Consolas, monospace">PS C:\project\repo&gt; git push -u origin dev ⑥</text>
+  <text x="70" y="468" font-size="15" fill="#8b949e" font-family="Consolas, monospace">Enumerating objects: 2564, done.  (SSH over 443)</text>
+  <!-- 右侧关系图 -->
+  <rect x="720" y="90" width="440" height="180" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="744" y="128" font-size="17" font-weight="600" fill="#1f2328">本地仓库 .git</text>
+  <text x="744" y="158" font-size="14" fill="#57606a">分支 dev / master / feature/monorepo</text>
+  <text x="744" y="184" font-size="14" fill="#57606a">origin → git@github.com:faintspire/…</text>
+  <text x="744" y="210" font-size="14" fill="#57606a">gitee  → https://gitee.com/liumusic/…</text>
+  <rect x="720" y="330" width="440" height="180" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="744" y="368" font-size="17" font-weight="600" fill="#1f2328">GitHub 远程仓库</text>
+  <text x="744" y="398" font-size="14" fill="#57606a">Private · 单文件 ≤100 MB · 仓库建议 ≤1 GB</text>
+  <text x="744" y="424" font-size="14" fill="#57606a">pre-receive 钩子整包校验大文件（GH001）</text>
+  <text x="744" y="450" font-size="14" fill="#57606a">SSH 走 ssh.github.com:443，HTTPS 偶发 reset</text>
+  <path d="M940 270 V 326" stroke="#1f883d" stroke-width="3" marker-end="url(#g1)"/>
+  <text x="956" y="304" font-size="15" fill="#1f883d">push ⑥</text>
+  <path d="M880 330 V 274" stroke="#0969da" stroke-width="3" marker-end="url(#b1)"/>
+  <text x="760" y="304" font-size="15" fill="#0969da">clone ④ / pull</text>
+  <defs>
+    <marker id="g1" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#1f883d"/></marker>
+    <marker id="b1" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#0969da"/></marker>
+  </defs>
+  <text x="40" y="560" font-size="15" fill="#57606a">commit 只写本地；push 才上传，且只传「被推引用可达」的对象；pull = fetch + merge（--rebase 保持线性）</text>
+  <text x="40" y="590" font-size="15" fill="#57606a">首次推送某分支加 -u 建立跟踪，之后可直接 git push / git pull</text>
+</svg>

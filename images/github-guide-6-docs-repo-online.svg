@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" font-family="Segoe UI, Microsoft YaHei, Arial, sans-serif">
+  <rect width="1200" height="700" fill="#ffffff"/>
+  <rect width="1200" height="56" fill="#24292f"/>
+  <circle cx="36" cy="28" r="14" fill="#ffffff"/>
+  <text x="60" y="34" font-size="16" fill="#ffffff">faintspire / sangerbox-docs</text>
+  <rect x="330" y="16" width="90" height="24" rx="12" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="346" y="33" font-size="13" fill="#57606a">Private</text>
+  <!-- 标签行 -->
+  <text x="40" y="86" font-size="15" font-weight="600" fill="#1f2328">Code</text>
+  <line x1="32" y1="96" x2="76" y2="96" stroke="#fd8c73" stroke-width="3"/>
+  <text x="100" y="86" font-size="15" fill="#57606a">Issues</text>
+  <text x="170" y="86" font-size="15" fill="#57606a">Pull requests</text>
+  <text x="290" y="86" font-size="15" fill="#57606a">Actions</text>
+  <text x="370" y="86" font-size="15" fill="#57606a">Settings</text>
+  <!-- 文件树 -->
+  <rect x="40" y="120" width="480" height="330" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+  <rect x="56" y="136" width="120" height="32" rx="6" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="72" y="157" font-size="14" fill="#1f2328">main ▾</text>
+  <text x="200" y="157" font-size="14" fill="#57606a">3 branches · 0 tags</text>
+  <line x1="56" y1="182" x2="504" y2="182" stroke="#d0d7de"/>
+  <rect x="56" y="194" width="448" height="34" rx="4" fill="#dafbe1"/>
+  <text x="72" y="216" font-size="15" fill="#1f2328">📄 README.md ⑦（仓库首页自动渲染）</text>
+  <text x="72" y="252" font-size="15" fill="#1f2328">📄 index.html（Docsify 引导页）</text>
+  <text x="72" y="284" font-size="15" fill="#1f2328">📄 _sidebar.md</text>
+  <text x="72" y="316" font-size="15" fill="#1f2328">📄 XXL-JOB执行器对接文档.md</text>
+  <text x="72" y="348" font-size="15" fill="#1f2328">📁 images/（10 png + 14 svg）</text>
+  <text x="72" y="380" font-size="15" fill="#1f2328">📄 GitHub操作文档.md</text>
+  <text x="72" y="418" font-size="13" fill="#57606a">Markdown 与相对路径图片在网页原生渲染 ⑧</text>
+  <!-- 渲染页 -->
+  <rect x="560" y="120" width="600" height="330" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+  <rect x="560" y="120" width="600" height="40" rx="8" fill="#f6f8fa"/>
+  <text x="580" y="146" font-size="14" fill="#57606a">https://github.com/faintspire/sangerbox-docs</text>
+  <text x="584" y="196" font-size="22" font-weight="600" fill="#1f2328">SangerBox 公共文档与资源导航</text>
+  <line x1="584" y1="212" x2="1136" y2="212" stroke="#d0d7de"/>
+  <text x="584" y="244" font-size="15" fill="#1f2328">公开文档</text>
+  <rect x="584" y="258" width="552" height="40" rx="4" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="600" y="284" font-size="14" fill="#0969da">XXL-JOB 执行器对接文档（脱敏版）</text>
+  <text x="584" y="330" font-size="15" fill="#1f2328">需授权资源（Private，访客 404）</text>
+  <rect x="584" y="344" width="552" height="66" rx="4" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="600" y="368" font-size="13" fill="#0969da">github.com/faintspire/sangerbox-server</text>
+  <text x="600" y="392" font-size="13" fill="#0969da">gitee.com/liumusic/sg-sangerbox-server</text>
+  <!-- 说明 -->
+  <rect x="40" y="480" width="1120" height="150" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="64" y="516" font-size="15" fill="#1f2328">⑦ 仓库根目录的 README.md 会被 GitHub 自动渲染为仓库首页，充当「目录页」</text>
+  <text x="64" y="548" font-size="15" fill="#1f2328">⑧ 正文中的 ![x](images/xxx.svg) 相对路径引用，网页与 IDEA 预览均可直接显示</text>
+  <text x="64" y="580" font-size="14" fill="#57606a">布局依据 GitHub 仓库主页真实结构：标签行 / 分支选择器 / 文件列表 / README 渲染区</text>
+</svg>

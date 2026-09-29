@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" font-family="Segoe UI, Microsoft YaHei, Arial, sans-serif">
+  <rect width="1200" height="680" fill="#ffffff"/>
+  <rect width="1200" height="56" fill="#24292f"/>
+  <circle cx="36" cy="28" r="14" fill="#ffffff"/>
+  <text x="60" y="34" font-size="16" fill="#ffffff">Settings · Appearance</text>
+  <!-- 侧栏 -->
+  <rect x="0" y="56" width="270" height="624" fill="#f6f8fa"/>
+  <text x="24" y="96" font-size="15" fill="#57606a">Public profile</text>
+  <text x="24" y="128" font-size="15" fill="#57606a">Account</text>
+  <rect x="8" y="142" width="254" height="34" rx="6" fill="#eaeef2"/>
+  <rect x="8" y="142" width="4" height="34" fill="#fd8c73"/>
+  <text x="24" y="164" font-size="15" font-weight="600" fill="#1f2328">Appearance ③</text>
+  <text x="24" y="200" font-size="15" fill="#57606a">Accessibility</text>
+  <text x="24" y="232" font-size="15" fill="#57606a">Notifications</text>
+  <text x="24" y="264" font-size="15" fill="#57606a">Billing and plans</text>
+  <!-- 主区 -->
+  <text x="310" y="110" font-size="24" font-weight="600" fill="#1f2328">Theme preferences</text>
+  <text x="310" y="140" font-size="15" fill="#57606a">Choose how GitHub looks to you. 点击即生效，无保存按钮。</text>
+  <!-- Light 卡 -->
+  <rect x="310" y="170" width="260" height="220" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+  <rect x="326" y="186" width="228" height="120" rx="4" fill="#ffffff" stroke="#d0d7de"/>
+  <rect x="326" y="186" width="228" height="22" fill="#ffffff" stroke="#d0d7de"/>
+  <rect x="336" y="218" width="150" height="8" fill="#d0d7de"/>
+  <rect x="336" y="234" width="190" height="8" fill="#eaeef2"/>
+  <rect x="336" y="250" width="170" height="8" fill="#eaeef2"/>
+  <circle cx="330" cy="352" r="9" fill="#ffffff" stroke="#d0d7de" stroke-width="2"/>
+  <text x="348" y="358" font-size="16" fill="#1f2328">Light</text>
+  <!-- Dark 卡（选中） -->
+  <rect x="600" y="170" width="260" height="220" rx="8" fill="#ffffff" stroke="#0969da" stroke-width="3"/>
+  <rect x="616" y="186" width="228" height="120" rx="4" fill="#0d1117"/>
+  <rect x="626" y="218" width="150" height="8" fill="#8b949e"/>
+  <rect x="626" y="234" width="190" height="8" fill="#30363d"/>
+  <rect x="626" y="250" width="170" height="8" fill="#30363d"/>
+  <circle cx="620" cy="352" r="9" fill="#0969da"/>
+  <circle cx="620" cy="352" r="3.5" fill="#ffffff"/>
+  <text x="638" y="358" font-size="16" font-weight="600" fill="#1f2328">Dark ④</text>
+  <circle cx="836" cy="190" r="12" fill="#0969da"/>
+  <path d="M830 190 l4 4 l8 -8" stroke="#ffffff" stroke-width="3" fill="none"/>
+  <!-- Sync 卡 -->
+  <rect x="890" y="170" width="260" height="220" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+  <rect x="906" y="186" width="114" height="120" fill="#ffffff" stroke="#d0d7de"/>
+  <rect x="1020" y="186" width="114" height="120" fill="#0d1117"/>
+  <rect x="916" y="218" width="80" height="8" fill="#d0d7de"/>
+  <rect x="1030" y="218" width="80" height="8" fill="#8b949e"/>
+  <circle cx="910" cy="352" r="9" fill="#ffffff" stroke="#d0d7de" stroke-width="2"/>
+  <text x="928" y="358" font-size="16" fill="#1f2328">Sync with system ⑤</text>
+  <rect x="310" y="430" width="840" height="70" rx="8" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="330" y="460" font-size="15" fill="#1f2328">Sync with system：跟随操作系统的浅色 / 深色模式（Windows 设置 → 个性化 → 颜色）</text>
+  <text x="330" y="484" font-size="14" fill="#57606a">主题仅作用于 github.com 网页端；Desktop 客户端与手机 App 各自独立设置</text>
+  <text x="310" y="560" font-size="14" fill="#57606a">页面结构依据 github.com/settings/appearance 真实页面绘制（需登录态查看）</text>
+</svg>

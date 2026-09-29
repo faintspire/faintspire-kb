@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="680" viewBox="0 0 1200 680" font-family="Segoe UI, Microsoft YaHei, Arial, sans-serif">
+  <rect width="1200" height="680" fill="#ffffff"/>
+  <rect width="1200" height="56" fill="#24292f"/>
+  <circle cx="36" cy="28" r="14" fill="#ffffff"/>
+  <text x="60" y="34" font-size="16" fill="#ffffff">github.com/settings/repositories（账号设置，非仓库设置）</text>
+  <!-- 侧栏 -->
+  <rect x="0" y="56" width="270" height="624" fill="#f6f8fa"/>
+  <text x="24" y="96" font-size="15" fill="#57606a">Public profile</text>
+  <text x="24" y="128" font-size="15" fill="#57606a">Account</text>
+  <rect x="8" y="142" width="254" height="34" rx="6" fill="#eaeef2"/>
+  <rect x="8" y="142" width="4" height="34" fill="#fd8c73"/>
+  <text x="24" y="164" font-size="15" font-weight="600" fill="#1f2328">Repositories ⓪</text>
+  <text x="24" y="200" font-size="15" fill="#57606a">SSH and GPG keys</text>
+  <text x="24" y="232" font-size="15" fill="#57606a">Developer settings（页脚）</text>
+  <!-- 列表 -->
+  <text x="310" y="110" font-size="24" font-weight="600" fill="#1f2328">Repositories</text>
+  <text x="310" y="140" font-size="14" fill="#57606a">这里只列「别人邀请你协作」的仓库；自己拥有的库不在此页、也没有 Leave</text>
+  <rect x="310" y="164" width="850" height="86" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="334" y="200" font-size="16" fill="#0969da">someone-else/legacy-project</text>
+  <text x="334" y="228" font-size="13" fill="#57606a">Collaborator · 最后活跃 2024</text>
+  <rect x="1030" y="188" width="100" height="36" rx="6" fill="#ffffff" stroke="#cf222e"/>
+  <text x="1058" y="212" font-size="15" fill="#cf222e">Leave ⑭</text>
+  <rect x="310" y="266" width="850" height="86" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="334" y="302" font-size="16" fill="#0969da">friend-org/internal-tool</text>
+  <text x="334" y="330" font-size="13" fill="#57606a">Collaborator · Write 权限</text>
+  <rect x="1030" y="290" width="100" height="36" rx="6" fill="#ffffff" stroke="#cf222e"/>
+  <text x="1058" y="314" font-size="15" fill="#cf222e">Leave</text>
+  <!-- 确认弹窗 -->
+  <rect x="430" y="392" width="560" height="200" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+  <rect x="430" y="392" width="560" height="48" rx="10" fill="#cf222e"/>
+  <text x="454" y="423" font-size="17" font-weight="600" fill="#ffffff">Leave repository?</text>
+  <text x="454" y="470" font-size="14" fill="#57606a">你将立即失去该库的读写权限；本地 clone 之后 pull/push 返回 403。</text>
+  <text x="454" y="496" font-size="14" fill="#57606a">回来需要对方重新邀请。确认已备份需要的代码？</text>
+  <rect x="454" y="524" width="100" height="38" rx="6" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="480" y="549" font-size="15" fill="#1f2328">Cancel</text>
+  <rect x="570" y="524" width="100" height="38" rx="6" fill="#cf222e"/>
+  <text x="596" y="549" font-size="15" fill="#ffffff">Leave ⑮</text>
+  <text x="310" y="648" font-size="14" fill="#57606a">组织成员退出在 头像 → Your organizations → 组织页 → Leave organization，入口不同</text>
+</svg>

@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" font-family="Segoe UI, Microsoft YaHei, Arial, sans-serif">
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <rect width="1200" height="56" fill="#24292f"/>
+  <circle cx="36" cy="28" r="14" fill="#ffffff"/>
+  <text x="60" y="34" font-size="16" fill="#ffffff">github.com/new</text>
+  <text x="600" y="110" font-size="26" font-weight="600" fill="#1f2328" text-anchor="middle">Create a new repository</text>
+  <text x="600" y="140" font-size="15" fill="#57606a" text-anchor="middle">A repository contains all project files, including documentation and revision history.</text>
+  <rect x="300" y="170" width="600" height="520" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="330" y="212" font-size="15" fill="#cf222e">Repository name *</text>
+  <rect x="330" y="224" width="180" height="40" rx="6" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="344" y="250" font-size="15" fill="#1f2328">faintspire /</text>
+  <rect x="520" y="224" width="350" height="40" rx="6" fill="#ffffff" stroke="#0969da" stroke-width="2"/>
+  <text x="534" y="250" font-size="15" fill="#1f2328">sangerbox-docs ①</text>
+  <text x="330" y="296" font-size="15" fill="#57606a">Description (optional)</text>
+  <rect x="330" y="308" width="540" height="40" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="330" y="384" font-size="15" fill="#1f2328">Public  — Anyone on the internet can see this repository</text>
+  <circle cx="338" cy="410" r="9" fill="#ffffff" stroke="#d0d7de" stroke-width="2"/>
+  <text x="356" y="416" font-size="15" fill="#57606a">Public</text>
+  <circle cx="338" cy="444" r="9" fill="#0969da"/>
+  <circle cx="338" cy="444" r="3.5" fill="#ffffff"/>
+  <text x="356" y="450" font-size="15" font-weight="600" fill="#1f2328">Private ②</text>
+  <text x="420" y="450" font-size="14" fill="#57606a">You choose who can see and commit</text>
+  <line x1="330" y1="476" x2="870" y2="476" stroke="#d0d7de"/>
+  <rect x="330" y="492" width="18" height="18" rx="3" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="360" y="507" font-size="15" fill="#1f2328">Add a README file</text>
+  <rect x="330" y="522" width="18" height="18" rx="3" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="360" y="537" font-size="15" fill="#1f2328">Add .gitignore</text>
+  <rect x="330" y="552" width="18" height="18" rx="3" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="360" y="567" font-size="15" fill="#1f2328">Choose a license</text>
+  <text x="560" y="567" font-size="13" fill="#57606a">（本地已有内容要推送：三项都不勾）</text>
+  <rect x="330" y="600" width="540" height="44" rx="6" fill="#1f883d"/>
+  <text x="600" y="628" font-size="16" fill="#ffffff" text-anchor="middle">Create repository ③</text>
+  <text x="300" y="726" font-size="14" fill="#57606a">字段与文案依据 github.com/new 真实页面绘制；仓库名小写/数字/连字符，同账号不可重名</text>
+</svg>

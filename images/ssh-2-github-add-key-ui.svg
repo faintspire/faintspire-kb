@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" font-family="Segoe UI, Microsoft YaHei, Arial, sans-serif">
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <!-- 顶部导航（GitHub 深色头） -->
+  <rect width="1200" height="56" fill="#24292f"/>
+  <circle cx="36" cy="28" r="14" fill="#ffffff"/>
+  <text x="64" y="34" font-size="17" fill="#ffffff">github.com</text>
+  <circle cx="1160" cy="28" r="14" fill="#8c959f"/>
+  <text x="1096" y="34" font-size="14" fill="#ffffff">头像 ①</text>
+  <!-- 侧栏 -->
+  <rect x="0" y="56" width="280" height="704" fill="#f6f8fa"/>
+  <text x="24" y="96" font-size="15" fill="#57606a">Public profile</text>
+  <text x="24" y="128" font-size="15" fill="#57606a">Account</text>
+  <text x="24" y="160" font-size="15" fill="#57606a">Appearance</text>
+  <text x="24" y="200" font-size="13" fill="#8c959f">Access</text>
+  <rect x="8" y="214" width="264" height="34" rx="6" fill="#eaeef2"/>
+  <rect x="8" y="214" width="4" height="34" fill="#fd8c73"/>
+  <text x="24" y="236" font-size="15" font-weight="600" fill="#1f2328">SSH and GPG keys ②</text>
+  <text x="24" y="272" font-size="15" fill="#57606a">Organizations</text>
+  <text x="24" y="304" font-size="15" fill="#57606a">Enterprises</text>
+  <!-- 主区 -->
+  <text x="320" y="104" font-size="24" font-weight="600" fill="#1f2328">SSH and GPG keys</text>
+  <rect x="1000" y="80" width="160" height="36" rx="6" fill="#1f883d"/>
+  <text x="1022" y="104" font-size="15" fill="#ffffff">New SSH key ③</text>
+  <rect x="320" y="140" width="840" height="560" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="348" y="182" font-size="16" font-weight="600" fill="#1f2328">Title ④</text>
+  <rect x="348" y="196" width="784" height="38" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="362" y="221" font-size="15" fill="#1f2328">desktop-236v9g0</text>
+  <text x="348" y="272" font-size="16" font-weight="600" fill="#1f2328">Key type</text>
+  <circle cx="356" cy="296" r="8" fill="#ffffff" stroke="#0969da" stroke-width="5"/>
+  <text x="376" y="302" font-size="15" fill="#1f2328">Authentication Key（git 拉取/推送用这个）</text>
+  <circle cx="356" cy="330" r="8" fill="#ffffff" stroke="#d0d7de" stroke-width="2"/>
+  <text x="376" y="336" font-size="15" fill="#57606a">Signing Key（提交签名用，需另传一次）</text>
+  <text x="348" y="380" font-size="16" font-weight="600" fill="#1f2328">Key ⑤</text>
+  <rect x="348" y="394" width="784" height="150" rx="6" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="362" y="422" font-size="13" fill="#1f2328" font-family="Consolas, monospace">ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGlUxfn5Xd/pVzWPcllf</text>
+  <text x="362" y="446" font-size="13" fill="#1f2328" font-family="Consolas, monospace">Xz63MROdIFxlL3av/ZwHvvdx liuzk@DESKTOP-236V9G0</text>
+  <text x="362" y="486" font-size="13" fill="#8c959f">整行粘贴，不要换行、不要多余空格</text>
+  <rect x="348" y="576" width="150" height="40" rx="6" fill="#1f883d"/>
+  <text x="368" y="602" font-size="15" fill="#ffffff">Add SSH key ⑥</text>
+  <text x="348" y="660" font-size="14" fill="#57606a">提交时可能要求确认账号密码（sudo mode），属正常安全校验</text>
+  <text x="320" y="736" font-size="14" fill="#57606a">界面元素与字段名依据 docs.github.com「Adding a new SSH key to your GitHub account」绘制</text>
+</svg>

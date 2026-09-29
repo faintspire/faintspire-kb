@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" font-family="Segoe UI, Microsoft YaHei, Arial, sans-serif">
+  <rect width="1200" height="640" fill="#f6f8fa"/>
+  <text x="40" y="52" font-size="26" font-weight="600" fill="#1f2328">SSH 密钥对：私钥留本机，公钥分发到各服务端</text>
+
+  <!-- 本机 -->
+  <rect x="40" y="100" width="380" height="420" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+  <rect x="40" y="100" width="380" height="46" rx="10" fill="#24292f"/>
+  <text x="60" y="130" font-size="18" fill="#ffffff">本机 Windows · C:\Users\liuzk\.ssh\</text>
+  <rect x="64" y="170" width="332" height="86" rx="6" fill="#fff5f5" stroke="#cf222e"/>
+  <text x="80" y="200" font-size="17" font-weight="600" fill="#cf222e">id_ed25519（私钥）</text>
+  <text x="80" y="226" font-size="14" fill="#57606a">永不出本机 · 不进仓库 · 不截图</text>
+  <text x="80" y="246" font-size="14" fill="#57606a">权限仅当前用户可读</text>
+  <rect x="64" y="272" width="332" height="86" rx="6" fill="#dafbe1" stroke="#1a7f37"/>
+  <text x="80" y="302" font-size="17" font-weight="600" fill="#1a7f37">id_ed25519.pub（公钥）</text>
+  <text x="80" y="328" font-size="14" fill="#57606a">可任意分发的一行文本</text>
+  <text x="80" y="348" font-size="14" fill="#57606a">ssh-ed25519 AAAA… 设备注释</text>
+  <rect x="64" y="374" width="332" height="70" rx="6" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="80" y="402" font-size="16" font-weight="600" fill="#1f2328">config（连接规则）</text>
+  <text x="80" y="426" font-size="14" fill="#57606a">github.com → ssh.github.com:443</text>
+  <text x="64" y="492" font-size="14" fill="#57606a">验证：ssh-keygen -lf id_ed25519.pub 查看指纹</text>
+
+  <!-- GitHub -->
+  <rect x="620" y="100" width="540" height="180" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+  <rect x="620" y="100" width="540" height="46" rx="10" fill="#24292f"/>
+  <text x="640" y="130" font-size="18" fill="#ffffff">GitHub 账号 · Settings → SSH and GPG keys</text>
+  <text x="640" y="176" font-size="15" fill="#1f2328">Authentication Keys 列表：一行公钥 = 一台受信设备</text>
+  <text x="640" y="204" font-size="14" fill="#57606a">desktop-236v9g0 · ssh-ed25519 · Added 2026-09-29</text>
+  <text x="640" y="240" font-size="14" fill="#cf222e">删除某行 = 立即吊销该设备的 git 访问权</text>
+
+  <!-- 服务器 -->
+  <rect x="620" y="340" width="540" height="180" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+  <rect x="620" y="340" width="540" height="46" rx="10" fill="#24292f"/>
+  <text x="640" y="370" font-size="18" fill="#ffffff">部署服务器 · ~/.ssh/authorized_keys</text>
+  <text x="640" y="416" font-size="15" fill="#1f2328">一行公钥 = 一台免密客户端（deploy.bat / scp 依赖它）</text>
+  <text x="640" y="444" font-size="14" fill="#57606a">目录 700 · 文件 600 · 属主为登录用户</text>
+  <text x="640" y="480" font-size="14" fill="#cf222e">CRLF 混入会导致 Permission denied，需 sed 修复</text>
+
+  <!-- 箭头 -->
+  <path d="M420 315 C 520 315 520 190 616 190" fill="none" stroke="#1a7f37" stroke-width="3" marker-end="url(#arr)"/>
+  <path d="M420 330 C 520 330 520 430 616 430" fill="none" stroke="#1a7f37" stroke-width="3" marker-end="url(#arr)"/>
+  <text x="452" y="238" font-size="15" fill="#1a7f37">公钥粘贴</text>
+  <text x="452" y="410" font-size="15" fill="#1a7f37">公钥追加</text>
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 z" fill="#1a7f37"/>
+    </marker>
+  </defs>
+  <text x="40" y="596" font-size="15" fill="#57606a">认证过程不传输密码：服务端用公钥出难题，本机用私钥作答（挑战-应答），私钥始终不离开本机。</text>
+</svg>

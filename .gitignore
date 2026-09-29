@@ -1,0 +1,9 @@
+### Logs ###
+logs/
+*.log
+
+### IDE / OS ###
+.idea/
+.vscode/
+.DS_Store
+*.iml

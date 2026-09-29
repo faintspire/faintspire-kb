@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760" font-family="Segoe UI, Microsoft YaHei, Arial, sans-serif">
+  <rect width="1200" height="760" fill="#ffffff"/>
+  <rect width="1200" height="56" fill="#24292f"/>
+  <circle cx="36" cy="28" r="14" fill="#ffffff"/>
+  <text x="60" y="34" font-size="16" fill="#ffffff">repo · Settings · General（滚动到页面最底部）</text>
+  <!-- Danger Zone -->
+  <rect x="60" y="100" width="700" height="300" rx="8" fill="#ffffff" stroke="#cf222e"/>
+  <text x="84" y="140" font-size="20" font-weight="600" fill="#cf222e">Danger Zone</text>
+  <line x1="84" y1="158" x2="736" y2="158" stroke="#d0d7de"/>
+  <text x="84" y="192" font-size="15" fill="#1f2328">Change repository visibility</text>
+  <rect x="560" y="172" width="176" height="32" rx="6" fill="#ffffff" stroke="#cf222e"/>
+  <text x="584" y="193" font-size="14" fill="#cf222e">Change visibility</text>
+  <line x1="84" y1="216" x2="736" y2="216" stroke="#d0d7de"/>
+  <text x="84" y="250" font-size="15" fill="#1f2328">Archive this repository（只读冻结，可逆）</text>
+  <rect x="560" y="230" width="176" height="32" rx="6" fill="#ffffff" stroke="#cf222e"/>
+  <text x="600" y="251" font-size="14" fill="#cf222e">Archive…</text>
+  <line x1="84" y1="274" x2="736" y2="274" stroke="#d0d7de"/>
+  <text x="84" y="308" font-size="15" font-weight="600" fill="#1f2328">Delete this repository（不可逆，90 天内可恢复）</text>
+  <rect x="560" y="288" width="176" height="32" rx="6" fill="#cf222e"/>
+  <text x="576" y="309" font-size="14" fill="#ffffff">Delete this repository ⑫</text>
+  <text x="84" y="360" font-size="14" fill="#57606a">官方流程：Settings → General → Danger Zone → Delete this repository</text>
+  <text x="84" y="384" font-size="14" fill="#57606a">看不到 Settings 标签时点仓库名右侧 ⋯ 下拉再选 Settings</text>
+  <!-- 确认弹窗（多步） -->
+  <rect x="430" y="240" width="720" height="470" rx="10" fill="#ffffff" stroke="#d0d7de"/>
+  <rect x="430" y="240" width="720" height="52" rx="10" fill="#cf222e"/>
+  <text x="454" y="273" font-size="18" font-weight="600" fill="#ffffff">Delete this repository?</text>
+  <text x="454" y="322" font-size="15" fill="#1f2328">第 1 步：点击 I want to delete this repository</text>
+  <text x="454" y="356" font-size="15" fill="#1f2328">第 2 步：阅读警告后点 I have read and understand these effects</text>
+  <text x="454" y="390" font-size="15" fill="#1f2328">第 3 步：输入完整仓库名校验 ⑬</text>
+  <rect x="454" y="404" width="672" height="42" rx="6" fill="#ffffff" stroke="#cf222e" stroke-width="2"/>
+  <text x="470" y="431" font-size="15" fill="#1f2328" font-family="Consolas, monospace">faintspire/github-pages-with-jekyll</text>
+  <rect x="454" y="470" width="220" height="42" rx="6" fill="#cf222e"/>
+  <text x="474" y="497" font-size="15" fill="#ffffff">Delete this repository</text>
+  <rect x="454" y="540" width="672" height="120" rx="6" fill="#fff8c5" stroke="#d4a72c"/>
+  <text x="474" y="572" font-size="14" fill="#57606a">删除即永久移除代码、Issues、Wiki、Pages；公开库的 fork 不受影响，</text>
+  <text x="474" y="596" font-size="14" fill="#57606a">私有库的 fork 会一并删除；90 天内可在 Settings → Repositories →</text>
+  <text x="474" y="620" font-size="14" fill="#57606a">Deleted repositories 恢复（仅 Owner / 组织 Owner）</text>
+  <text x="60" y="720" font-size="14" fill="#57606a">按钮与确认步骤文案依据 docs.github.com「Deleting a repository」逐步绘制</text>
+</svg>

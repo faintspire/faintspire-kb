@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="820" viewBox="0 0 1200 820" font-family="Segoe UI, Microsoft YaHei, Arial, sans-serif">
+  <rect width="1200" height="820" fill="#ffffff"/>
+  <rect width="1200" height="56" fill="#24292f"/>
+  <circle cx="36" cy="28" r="14" fill="#ffffff"/>
+  <text x="60" y="34" font-size="16" fill="#ffffff">Settings → Developer settings ⑯（左侧栏最底部）</text>
+  <!-- 侧栏 -->
+  <rect x="0" y="56" width="300" height="764" fill="#f6f8fa"/>
+  <text x="24" y="96" font-size="16" font-weight="600" fill="#1f2328">Developer settings</text>
+  <text x="24" y="132" font-size="15" fill="#57606a">GitHub Apps</text>
+  <text x="24" y="164" font-size="15" fill="#57606a">OAuth Apps</text>
+  <rect x="8" y="178" width="284" height="60" rx="6" fill="#eaeef2"/>
+  <rect x="8" y="178" width="4" height="60" fill="#fd8c73"/>
+  <text x="24" y="202" font-size="15" font-weight="600" fill="#1f2328">Personal access tokens</text>
+  <text x="40" y="226" font-size="14" fill="#1f2328">Tokens (classic) ✔ 选这个</text>
+  <text x="40" y="252" font-size="14" fill="#8c959f">Fine-grained tokens（IDEA 不支持）</text>
+  <!-- 主区 -->
+  <text x="340" y="110" font-size="24" font-weight="600" fill="#1f2328">Generate new personal access token (classic)</text>
+  <text x="340" y="146" font-size="15" fill="#1f2328">Note</text>
+  <rect x="340" y="158" width="500" height="40" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="356" y="184" font-size="15" fill="#1f2328">idea-sg-sangerbox</text>
+  <text x="340" y="232" font-size="15" fill="#1f2328">Expiration ⑰</text>
+  <rect x="340" y="244" width="220" height="40" rx="6" fill="#ffffff" stroke="#0969da" stroke-width="2"/>
+  <text x="356" y="270" font-size="15" fill="#1f2328">90 days</text>
+  <text x="580" y="270" font-size="14" fill="#cf222e">不要选 No expiration</text>
+  <text x="340" y="322" font-size="16" font-weight="600" fill="#1f2328">Select scopes ⑱</text>
+  <rect x="340" y="336" width="560" height="220" rx="8" fill="#f6f8fa" stroke="#0969da"/>
+  <text x="360" y="368" font-size="15" fill="#1f2328">☑ repo（含子项 full_control_of_private_repositories 等）</text>
+  <text x="360" y="400" font-size="15" fill="#1f2328">☑ gist</text>
+  <text x="360" y="432" font-size="15" fill="#1f2328">☑ read:org</text>
+  <text x="360" y="464" font-size="15" fill="#1f2328">☑ workflow</text>
+  <text x="360" y="496" font-size="15" fill="#1f2328">☑ read:user</text>
+  <text x="360" y="528" font-size="15" fill="#1f2328">☑ user:email</text>
+  <text x="930" y="368" font-size="14" fill="#57606a">IDEA 弹窗要求的</text>
+  <text x="930" y="392" font-size="14" fill="#57606a">6 项 scopes，</text>
+  <text x="930" y="416" font-size="14" fill="#57606a">少勾会 401</text>
+  <rect x="340" y="580" width="200" height="44" rx="6" fill="#1f883d"/>
+  <text x="368" y="608" font-size="16" fill="#ffffff">Generate token ⑲</text>
+  <rect x="340" y="650" width="760" height="60" rx="6" fill="#0d1117"/>
+  <text x="360" y="686" font-size="15" fill="#7ee787" font-family="Consolas, monospace">ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ⑳</text>
+  <rect x="1010" y="664" width="70" height="32" rx="6" fill="#30363d"/>
+  <text x="1026" y="685" font-size="13" fill="#ffffff">copy</text>
+  <rect x="340" y="726" width="760" height="52" rx="6" fill="#fff8c5" stroke="#d4a72c"/>
+  <text x="360" y="758" font-size="15" fill="#57606a">只显示这一次！关闭页面后无法再查看；泄露立即到本页 Delete 撤销</text>
+  <text x="340" y="806" font-size="14" fill="#57606a">流程依据 docs.github.com「Creating a personal access token (classic)」绘制</text>
+</svg>

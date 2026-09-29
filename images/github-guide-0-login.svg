@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="700" viewBox="0 0 1200 700" font-family="Segoe UI, Microsoft YaHei, Arial, sans-serif">
+  <rect width="1200" height="700" fill="#f6f8fa"/>
+  <rect width="1200" height="56" fill="#24292f"/>
+  <circle cx="600" cy="28" r="16" fill="#ffffff"/>
+  <rect x="380" y="120" width="440" height="470" rx="8" fill="#ffffff" stroke="#d0d7de"/>
+  <circle cx="600" cy="176" r="26" fill="#24292f"/>
+  <text x="600" y="232" font-size="24" font-weight="600" fill="#1f2328" text-anchor="middle">Sign in to GitHub</text>
+  <text x="412" y="278" font-size="15" font-weight="600" fill="#1f2328">Username or email address ①</text>
+  <rect x="412" y="290" width="376" height="40" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="426" y="316" font-size="15" fill="#8c959f">faintspire</text>
+  <text x="412" y="360" font-size="15" font-weight="600" fill="#1f2328">Password ②</text>
+  <rect x="412" y="372" width="376" height="40" rx="6" fill="#ffffff" stroke="#d0d7de"/>
+  <text x="426" y="398" font-size="15" fill="#8c959f">••••••••••</text>
+  <text x="700" y="398" font-size="14" fill="#0969da">Forgot password?</text>
+  <rect x="412" y="436" width="376" height="42" rx="6" fill="#1f883d"/>
+  <text x="600" y="463" font-size="16" fill="#ffffff" text-anchor="middle">Sign in ③</text>
+  <rect x="412" y="494" width="376" height="42" rx="6" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="600" y="521" font-size="15" fill="#1f2328" text-anchor="middle">Sign in with a passkey ④</text>
+  <text x="600" y="566" font-size="14" fill="#57606a" text-anchor="middle">New to GitHub?  <tspan fill="#0969da">Create an account</tspan></text>
+  <text x="40" y="660" font-size="14" fill="#57606a">界面字段依据 github.com/login 真实页面绘制；开启 2FA 后还需输入验证码或使用 passkey / 安全密钥。</text>
+</svg>

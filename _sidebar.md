@@ -9,5 +9,6 @@
 
 - **技术笔记**
   - [Git 历史大文件清理（GH001）](doc/notes/git-history-large-file-cleanup.md)
+  - [Java 出网代理与请求头透传边界](doc/notes/java-http-proxy-and-header-boundary.md)
 
 - [维护说明](doc/维护说明.md)

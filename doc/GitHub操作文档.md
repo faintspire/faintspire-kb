@@ -437,15 +437,15 @@ git push https://github.com/<用户名>/sangerbox-docs.git docs-split:main
 
 **隔离机制（两库提交互不影响）**：
 
-1. `faintspire-kb/` 目录嵌套在本仓库工作区内，但**自身是独立 Git 仓库**（自有 `.git`、独立 main 分支）；
-2. 本仓库 `.gitignore` 增加 `/faintspire-kb/`，父库 `git add .` / `git status` 完全看不见它；
-3. ⚠️ 切勿对父库执行 `git add faintspire-kb`：嵌套仓库会被登记为 **gitlink(160000)**，整个目录变成“子模块指针”，内部文件全部脱离父库跟踪（本项目 sg-dedup-server 曾踩此坑）；
+1. `doc/faintspire-kb/` 目录嵌套在公司仓库工作区内，但**自身是独立 Git 仓库**（自有 `.git`、独立 main 分支）；
+2. 公司仓库 `.gitignore` 增加 `/doc/faintspire-kb/`，父库 `git add .` / `git status` 完全看不见它；
+3. ⚠️ 切勿对父库执行 `git add doc/faintspire-kb`：嵌套仓库会被登记为 **gitlink(160000)**，整个目录变成“子模块指针”，内部文件全部脱离父库跟踪（本项目 sg-dedup-server 曾踩此坑）；
 4. 在 kb 目录内的 commit/push 只作用于 kb 库；父库提交 likewise 不碰 kb。
 
 **上线步骤**：
 
 1. GitHub 建**公开**空库 `faintspire-kb`（三个初始化项都不勾）；
-2. `cd faintspire-kb` → `git add .` → `git commit -m "docs: 初始化个人知识库"` → `git remote add origin git@github.com:faintspire/faintspire-kb.git` → `git push -u origin main`；
+2. `cd doc/faintspire-kb` → `git add .` → `git commit -m "docs: 初始化个人知识库"` → `git remote add origin git@github.com:faintspire/faintspire-kb.git` → `git push -u origin main`；
 3. 可选：Settings → Pages 开项目站点 `https://faintspire.github.io/faintspire-kb/` 作为在线阅读入口（纯 Markdown 需 Docsify 引导页，参考 6.3）。
 
 ---

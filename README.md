@@ -33,13 +33,13 @@
 
 ## 与公司仓库的关系（嵌套独立仓库）
 
-1. 本目录物理嵌套在公司仓库工作区内，但**自身是独立 Git 仓库**（自有 `.git`、独立 `main` 分支）；
-2. 公司仓库 `.gitignore` 以 `/faintspire-kb/` 隔离，父库 `git status` / `git add .` 完全看不见本目录；
-3. ⚠️ 切勿在公司库执行 `git add faintspire-kb`：嵌套仓库会被登记为 gitlink(160000)，内部文件全部脱离父库跟踪；
+1. 本目录物理嵌套在公司仓库的 `doc/` 目录下，但**自身是独立 Git 仓库**（自有 `.git`、独立 `main` 分支）；
+2. 公司仓库 `.gitignore` 以 `/doc/faintspire-kb/` 隔离，父库 `git status` / `git add .` 完全看不见本目录；
+3. ⚠️ 切勿在公司库执行 `git add doc/faintspire-kb`：嵌套仓库会被登记为 gitlink(160000)，内部文件全部脱离父库跟踪；
 4. 本目录内的 commit / push 只作用于本库，公司库提交 likewise 不碰本目录。
 
 ## 发布与在线阅读
 
-- 推送：在 `faintspire-kb/` 目录内 `git add . && git commit && git push`（SSH over 443）；
+- 推送：在 `doc/faintspire-kb/` 目录内 `git add . && git commit && git push`（SSH over 443）；
 - 在线阅读：GitHub 网页直接浏览 `doc/` 下 Markdown 与 SVG；
 - 可选站点化：日后如需 Docsify 站点，在**根目录**加 `index.html` + `_sidebar.md` 并开 Pages（源选 `main` + `/ (root)`），站点地址 `https://faintspire.github.io/faintspire-kb/`。

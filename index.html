@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="vendor/docsify/vue.css">
     <link rel="stylesheet" href="vendor/docsify/sidebar.min.css">
     <style>
-        /* ===== 语雀风格阅读体验（2026-09-29）：纯 CSS 覆盖 docsify 默认主题 ===== */
         body, .markdown-section { font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif; }
 
         /* 左栏：白底、细右边框、280px，条目圆角 hover/选中态 */
@@ -86,9 +85,11 @@
                     if (!heads.length) { panel.style.display = 'none'; return; }
                     panel.style.display = '';
                     let html = '<div class="kb-outline-title">大纲</div><ul>';
+                    /* 大纲链接必须用带 .md 的 route.file；route.path 无后缀会导致 Pages 404 */
+                    const base = vm.route.path === '/' ? '/' : (vm.route.file || vm.route.path);
                     heads.forEach(function (h) {
                         const cls = h.tagName === 'H3' ? 'kb-l3' : 'kb-l2';
-                        html += '<li class="' + cls + '"><a href="#' + vm.route.path + '?id=' + h.id + '">'
+                        html += '<li class="' + cls + '"><a href="#' + base + '?id=' + h.id + '">'
                             + h.textContent + '</a></li>';
                     });
                     panel.innerHTML = html + '</ul>';

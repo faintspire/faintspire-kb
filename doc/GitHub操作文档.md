@@ -389,6 +389,7 @@ git push https://github.com/<用户名>/sangerbox-docs.git docs-split:main
 |---|---|
 | 站点 404 | 分支/目录选错（文件在 docs/ 却选了 root）；开启不足 2 分钟；仓库名大小写与 URL 不一致 |
 | Docsify 侧栏不显示，`_sidebar.md` 直连 404 | Pages 分支源部署默认跑 Jekyll，**Jekyll 忽略下划线开头文件**；仓库根目录加空文件 `.nojekyll` 后重新部署即恢复（本项目 2026-09-29 实踩）；另注意 Pages 构建队列可能延迟数分钟，用 deployments API 查状态 |
+| 点站内自研大纲/锚点链接跳 404（URL 无 `.md` 后缀） | Docsify 的 `vm.route.path` **不含 `.md`**，带后缀的完整路径在 `vm.route.file`；拼跳转链接误用 path 会生成无后缀路由 → Pages 404；改用 `vm.route.file`（首页特判为 `/`） |
 | 首页正常但 css/js/图片 404 | 项目站点带仓库名前缀，资源必须用**相对路径** `./style.css`，写成 `/style.css` 会指向站点根而 404 |
 | 更新后内容没变 | 浏览器/CDN 缓存，Ctrl+F5 强刷；或 Actions 里部署尚未完成 |
 | Private 仓库开不了 Pages | 免费档限制，改 Public 或付费；内部文档建议直接用仓库渲染（第五章） |

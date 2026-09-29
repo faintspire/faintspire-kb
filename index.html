@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <!-- docsify 已本地化至 vendor/，站点零外部 CDN 依赖（2026-09-29） -->
     <link rel="stylesheet" href="vendor/docsify/vue.css">
+    <link rel="stylesheet" href="vendor/docsify/sidebar.min.css">
     <style>
         /* 侧栏分组观感：浅灰底 + 组标题加粗，正文限宽提升可读性 */
         .sidebar { background: #fafbfc; }
@@ -19,11 +20,16 @@
 <script>
     window.$docsify = {
         loadSidebar: true,
+        alias: {
+            '/.*/_sidebar.md': '/_sidebar.md'
+        },
         subMaxLevel: 3,
+        sidebarDisplayLevel: 1,
         auto2top: true,
         relativePath: true
     }
 </script>
 <script src="vendor/docsify/docsify.min.js"></script>
+<script src="vendor/docsify/docsify-sidebar-collapse.min.js"></script>
 </body>
 </html>

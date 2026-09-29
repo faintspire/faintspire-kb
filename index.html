@@ -75,19 +75,19 @@
             /* 右侧大纲面板：随当前文档的 h2/h3 生成，点击跳转对应小节 */
             function (hook, vm) {
                 hook.doneEach(function () {
-                    var panel = document.getElementById('kb-outline');
+                    let panel = document.getElementById('kb-outline');
                     if (!panel) {
                         panel = document.createElement('aside');
                         panel.id = 'kb-outline';
                         document.body.appendChild(panel);
                     }
-                    var heads = Array.prototype.slice.call(
+                    const heads = Array.prototype.slice.call(
                         document.querySelectorAll('.markdown-section h2, .markdown-section h3'));
                     if (!heads.length) { panel.style.display = 'none'; return; }
                     panel.style.display = '';
-                    var html = '<div class="kb-outline-title">大纲</div><ul>';
+                    let html = '<div class="kb-outline-title">大纲</div><ul>';
                     heads.forEach(function (h) {
-                        var cls = h.tagName === 'H3' ? 'kb-l3' : 'kb-l2';
+                        const cls = h.tagName === 'H3' ? 'kb-l3' : 'kb-l2';
                         html += '<li class="' + cls + '"><a href="#' + vm.route.path + '?id=' + h.id + '">'
                             + h.textContent + '</a></li>';
                     });

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Faintspire 知识库</title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <!-- docsify 已本地化至 vendor/，站点零外部 CDN 依赖（2026-09-29） -->
+    <!-- docsify 及插件均已本地化至 vendor/，站点零外部 CDN 依赖（2026-09-29） -->
     <link rel="stylesheet" href="vendor/docsify/vue.css">
     <link rel="stylesheet" href="vendor/docsify/sidebar.min.css">
     <style>
@@ -12,7 +12,19 @@
         .sidebar { background: #fafbfc; }
         .sidebar li > p { font-weight: 600; color: #57606a; }
         .markdown-section { max-width: 900px; }
-        .search { margin-bottom: 12px; }
+
+        /* 右侧「大纲」面板（对齐语雀阅读体验），窄屏自动隐藏 */
+        #kb-outline { position: fixed; top: 70px; right: 16px; width: 220px;
+            max-height: calc(100vh - 100px); overflow: auto;
+            border-left: 1px solid #eaeef2; padding-left: 12px; font-size: 13px; }
+        #kb-outline .kb-outline-title { font-weight: 600; color: #57606a; margin-bottom: 8px; }
+        #kb-outline ul { list-style: none; margin: 0; padding: 0; }
+        #kb-outline li { margin: 4px 0; }
+        #kb-outline li.kb-l3 { padding-left: 12px; }
+        #kb-outline a { color: #57606a; text-decoration: none; }
+        #kb-outline a:hover { color: #0969da; }
+        @media (min-width: 1101px) { .content { padding-right: 250px; } }
+        @media (max-width: 1100px) { #kb-outline { display: none !important; } }
     </style>
 </head>
 <body>
@@ -24,9 +36,33 @@
             '/.*/_sidebar.md': '/_sidebar.md'
         },
         subMaxLevel: 3,
-        sidebarDisplayLevel: 1,
+        sidebarDisplayLevel: 2,
         auto2top: true,
-        relativePath: true
+        relativePath: true,
+        plugins: [
+            /* 右侧大纲面板：随当前文档的 h2/h3 生成，点击跳转对应小节 */
+            function (hook, vm) {
+                hook.doneEach(function () {
+                    var panel = document.getElementById('kb-outline');
+                    if (!panel) {
+                        panel = document.createElement('aside');
+                        panel.id = 'kb-outline';
+                        document.body.appendChild(panel);
+                    }
+                    var heads = Array.prototype.slice.call(
+                        document.querySelectorAll('.markdown-section h2, .markdown-section h3'));
+                    if (!heads.length) { panel.style.display = 'none'; return; }
+                    panel.style.display = '';
+                    var html = '<div class="kb-outline-title">大纲</div><ul>';
+                    heads.forEach(function (h) {
+                        var cls = h.tagName === 'H3' ? 'kb-l3' : 'kb-l2';
+                        html += '<li class="' + cls + '"><a href="#' + vm.route.path + '?id=' + h.id + '">'
+                            + h.textContent + '</a></li>';
+                    });
+                    panel.innerHTML = html + '</ul>';
+                });
+            }
+        ]
     }
 </script>
 <script src="vendor/docsify/docsify.min.js"></script>

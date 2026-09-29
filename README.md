@@ -42,4 +42,4 @@
 
 - 推送：在 `doc/faintspire-kb/` 目录内 `git add . && git commit && git push`（SSH over 443）；
 - 在线阅读：GitHub 网页直接浏览 `doc/` 下 Markdown 与 SVG；
-- 可选站点化：日后如需 Docsify 站点，在**根目录**加 `index.html` + `_sidebar.md` 并开 Pages（源选 `main` + `/ (root)`），站点地址 `https://faintspire.github.io/faintspire-kb/`。
+- 在线站点：根目录 `index.html` + `_sidebar.md`（Docsify，含侧边栏与搜索）已就绪；仓库 Settings → Pages 选 `main` + `/ (root)` 即得 `https://faintspire.github.io/faintspire-kb/`。

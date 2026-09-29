@@ -9,3 +9,5 @@
 
 - **技术笔记**
   - [Git 历史大文件清理（GH001）](doc/notes/git-history-large-file-cleanup.md)
+
+- [维护说明](doc/维护说明.md)

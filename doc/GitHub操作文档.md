@@ -568,6 +568,7 @@ Settings → Danger Zone → **Archive this repository**：仓库变**只读**�
 | 19 | 公共文档里能放配置示例吗 | 可以，但 token / 密码 / 内网 IP 必须脱敏为占位符；见 6.5 脱敏纪律与 `public-site/README.md` 发布纪律 |
 | 20 | push 被拒 GH001: Large files detected | 历史提交中含 >100 MB 文件（常见为误提交的日志/安装包）；GitHub 整包校验，一个超标全拒，只删文件再提交无效。处理：先 `git clone --mirror` 备份 → 补 `.gitignore` → `git filter-repo --invert-paths --path-glob '*/logs/*'` 清历史 → 重加 remote 重推；旧远程（如 Gitee）需 force push；备选 `git lfs migrate import`，见 3.3 |
 | 21 | push 报 Recv failure: Connection was reset / Could not connect to port 443 | 连接层失败（未进入打包阶段），多为到 github.com:443 的跨境链路间歇性重置，与仓库/凭据无关；已推成功的分支不受影响。处理：`Test-NetConnection github.com -Port 443` 测连通 → 通则直接重推；不通则改走 SSH over 443（`ssh://git@ssh.github.com:443/<owner>/<repo>.git`）或仅对 GitHub 配代理 `git config --global http.https://github.com.proxy http://127.0.0.1:<port>`，见 3.2 |
+| 22 | Docsify 站点：**从首页点侧栏链接正常，但已在某篇文档里时点侧栏另一个链接报 404** | 开了 `relativePath: true`（文档内相对图片 `images/xxx.svg` 需要它）后，**不以 `/` 开头的链接会被拼到「当前文档所在目录」下**：在 `/doc/a.md` 里点侧栏的 `doc/b.md` → 实际请求 `/doc/doc/b.md` → 404。处理：`_sidebar.md` 内所有链接加前导 `/`（源码判据：`relativePath && link.indexOf('/') !== 0` 才做目录拼接），**不要直接关掉 `relativePath`**，否则正文里的 `images/*.svg` 全部丢图。区别于另两类 404：Jekyll 吐下划线文件（服务器未发布 `_sidebar.md`）、自定义插件误用 `vm.route.path`（链接缺 `.md` 后缀） |
 
 ---
 
